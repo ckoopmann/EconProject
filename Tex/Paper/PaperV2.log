@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.16)  23 JAN 2017 12:34
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.16)  23 JAN 2017 16:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -116,35 +116,62 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 (/usr/local/texlive/2013/texmf-dist/tex/latex/placeins/placeins.sty
 Package: placeins 2005/04/18  v 2.2
 )
+(/usr/local/texlive/2013/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count100
+\Gm@cntv=\count101
+\c@Gm@tempcnt=\count102
+\Gm@bindingoffset=\dimen114
+\Gm@wd@mp=\dimen115
+\Gm@odd@mp=\dimen116
+\Gm@even@mp=\dimen117
+\Gm@layoutwidth=\dimen118
+\Gm@layoutheight=\dimen119
+\Gm@layouthoffset=\dimen120
+\Gm@layoutvoffset=\dimen121
+\Gm@dimlist=\toks20
+)
 (./PaperV2.aux)
 \openout1 = `PaperV2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
 
 (/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count100
-\scratchdimen=\dimen114
+\scratchcounter=\count103
+\scratchdimen=\dimen122
 \scratchbox=\box28
-\nofMPsegments=\count101
-\nofMParguments=\count102
-\everyMPshowfont=\toks20
-\MPscratchCnt=\count103
-\MPscratchDim=\dimen115
-\MPnumerator=\count104
-\makeMPintoPDFobject=\count105
-\everyMPtoPDFconversion=\toks21
+\nofMPsegments=\count104
+\nofMParguments=\count105
+\everyMPshowfont=\toks21
+\MPscratchCnt=\count106
+\MPscratchDim=\dimen123
+\MPnumerator=\count107
+\makeMPintoPDFobject=\count108
+\everyMPtoPDFconversion=\toks22
 ) (/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -152,10 +179,6 @@ Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 (/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
-)
-(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -193,6 +216,40 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(85.35826pt, 426.79135pt, 85.35826pt)
+* v-part:(T,H,B)=(85.35826pt, 674.33032pt, 85.35826pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=426.79135pt
+* \textheight=674.33032pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-23.91173pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
 [1
 
 {/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
@@ -204,12 +261,8 @@ s.png Graphic file (type png)
 <use /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanWages
 .png>
 Package pdftex.def Info: /Users/Christian/Statistik_Studium/EconProject/Code/Gr
-aphics/plotMeanWages.png used on input line 32.
-(pdftex.def)             Requested size: 345.0pt x 230.04897pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
+aphics/plotMeanWages.png used on input line 33.
+(pdftex.def)             Requested size: 426.79135pt x 284.58792pt.
 
 </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanWagesByTo
 talExp.png, id=12, 2132.96875pt x 1422.31375pt>
@@ -219,8 +272,8 @@ sByTotalExp.png Graphic file (type png)
 <use /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanWages
 ByTotalExp.png>
 Package pdftex.def Info: /Users/Christian/Statistik_Studium/EconProject/Code/Gr
-aphics/plotMeanWagesByTotalExp.png used on input line 39.
-(pdftex.def)             Requested size: 345.0pt x 230.04897pt.
+aphics/plotMeanWagesByTotalExp.png used on input line 40.
+(pdftex.def)             Requested size: 426.79135pt x 284.58792pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -234,8 +287,8 @@ sByOldExp.png Graphic file (type png)
 <use /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanWages
 ByOldExp.png>
 Package pdftex.def Info: /Users/Christian/Statistik_Studium/EconProject/Code/Gr
-aphics/plotMeanWagesByOldExp.png used on input line 46.
-(pdftex.def)             Requested size: 345.0pt x 230.04897pt.
+aphics/plotMeanWagesByOldExp.png used on input line 47.
+(pdftex.def)             Requested size: 426.79135pt x 284.58792pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -249,8 +302,8 @@ sByNewExp.png Graphic file (type png)
 <use /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanWages
 ByNewExp.png>
 Package pdftex.def Info: /Users/Christian/Statistik_Studium/EconProject/Code/Gr
-aphics/plotMeanWagesByNewExp.png used on input line 53.
-(pdftex.def)             Requested size: 345.0pt x 230.04897pt.
+aphics/plotMeanWagesByNewExp.png used on input line 54.
+(pdftex.def)             Requested size: 426.79135pt x 284.58792pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -264,8 +317,8 @@ sByTotalEdu.png Graphic file (type png)
 <use /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanWages
 ByTotalEdu.png>
 Package pdftex.def Info: /Users/Christian/Statistik_Studium/EconProject/Code/Gr
-aphics/plotMeanWagesByTotalEdu.png used on input line 60.
-(pdftex.def)             Requested size: 345.0pt x 230.04897pt.
+aphics/plotMeanWagesByTotalEdu.png used on input line 61.
+(pdftex.def)             Requested size: 426.79135pt x 284.58792pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -279,8 +332,8 @@ sByAgeGroup.png Graphic file (type png)
 <use /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanWages
 ByAgeGroup.png>
 Package pdftex.def Info: /Users/Christian/Statistik_Studium/EconProject/Code/Gr
-aphics/plotMeanWagesByAgeGroup.png used on input line 67.
-(pdftex.def)             Requested size: 345.0pt x 230.04897pt.
+aphics/plotMeanWagesByAgeGroup.png used on input line 68.
+(pdftex.def)             Requested size: 426.79135pt x 284.58792pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -294,270 +347,300 @@ sBySkillGroup.png Graphic file (type png)
 <use /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanWages
 BySkillGroup.png>
 Package pdftex.def Info: /Users/Christian/Statistik_Studium/EconProject/Code/Gr
-aphics/plotMeanWagesBySkillGroup.png used on input line 74.
-(pdftex.def)             Requested size: 345.0pt x 230.04897pt.
+aphics/plotMeanWagesBySkillGroup.png used on input line 75.
+(pdftex.def)             Requested size: 426.79135pt x 284.58792pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[2]
-
-LaTeX Warning: Text page 3 contains only floats.
-
-[3 </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanWages.
-png> </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanWage
-sByTotalExp.png>]
-
-LaTeX Warning: Text page 4 contains only floats.
-
-[4 </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanWagesB
-yOldExp.png> </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plot
-MeanWagesByNewExp.png>]
-
-LaTeX Warning: Text page 5 contains only floats.
-
-[5 </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanWagesB
-yTotalEdu.png> </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/pl
-otMeanWagesByAgeGroup.png>] [6 </Users/Christian/Statistik_Studium/EconProject/
-Code/Graphics/plotMeanWagesBySkillGroup.png>]
+[2 </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanWages.
+png>] [3 </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMean
+WagesByTotalExp.png> </Users/Christian/Statistik_Studium/EconProject/Code/Graph
+ics/plotMeanWagesByOldExp.png>] [4 </Users/Christian/Statistik_Studium/EconProj
+ect/Code/Graphics/plotMeanWagesByNewExp.png> </Users/Christian/Statistik_Studiu
+m/EconProject/Code/Graphics/plotMeanWagesByTotalEdu.png>] [5 </Users/Christian/
+Statistik_Studium/EconProject/Code/Graphics/plotMeanWagesByAgeGroup.png> </User
+s/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanWagesBySkillGro
+up.png>]
 </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanExp.png, 
-id=40, 2132.96875pt x 1422.31375pt>
+id=37, 2132.96875pt x 1422.31375pt>
 File: /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanExp.
 png Graphic file (type png)
 
 <use /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanExp.p
 ng>
 Package pdftex.def Info: /Users/Christian/Statistik_Studium/EconProject/Code/Gr
-aphics/plotMeanExp.png used on input line 91.
-(pdftex.def)             Requested size: 345.0pt x 230.04897pt.
+aphics/plotMeanExp.png used on input line 92.
+(pdftex.def)             Requested size: 426.79135pt x 284.58792pt.
 
 </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanExpByAgeG
-roup.png, id=41, 2132.96875pt x 1422.31375pt>
+roup.png, id=38, 2132.96875pt x 1422.31375pt>
 File: /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanExpB
 yAgeGroup.png Graphic file (type png)
 
 <use /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanExpBy
 AgeGroup.png>
 Package pdftex.def Info: /Users/Christian/Statistik_Studium/EconProject/Code/Gr
-aphics/plotMeanExpByAgeGroup.png used on input line 98.
-(pdftex.def)             Requested size: 345.0pt x 230.04897pt.
+aphics/plotMeanExpByAgeGroup.png used on input line 99.
+(pdftex.def)             Requested size: 426.79135pt x 284.58792pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanExpBySkil
-lGroup.png, id=42, 2132.96875pt x 1422.31375pt>
+lGroup.png, id=39, 2132.96875pt x 1422.31375pt>
 File: /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanExpB
 ySkillGroup.png Graphic file (type png)
 
 <use /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanExpBy
 SkillGroup.png>
 Package pdftex.def Info: /Users/Christian/Statistik_Studium/EconProject/Code/Gr
-aphics/plotMeanExpBySkillGroup.png used on input line 105.
-(pdftex.def)             Requested size: 345.0pt x 230.04897pt.
+aphics/plotMeanExpBySkillGroup.png used on input line 106.
+(pdftex.def)             Requested size: 426.79135pt x 284.58792pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanEdu.png, 
-id=43, 2132.96875pt x 1422.31375pt>
+id=40, 2132.96875pt x 1422.31375pt>
 File: /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanEdu.
 png Graphic file (type png)
 
 <use /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanEdu.p
 ng>
 Package pdftex.def Info: /Users/Christian/Statistik_Studium/EconProject/Code/Gr
-aphics/plotMeanEdu.png used on input line 112.
-(pdftex.def)             Requested size: 345.0pt x 230.04897pt.
+aphics/plotMeanEdu.png used on input line 113.
+(pdftex.def)             Requested size: 426.79135pt x 284.58792pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanEduByAgeG
-roup.png, id=44, 2132.96875pt x 1422.31375pt>
+roup.png, id=41, 2132.96875pt x 1422.31375pt>
 File: /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanEduB
 yAgeGroup.png Graphic file (type png)
 
 <use /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanEduBy
 AgeGroup.png>
 Package pdftex.def Info: /Users/Christian/Statistik_Studium/EconProject/Code/Gr
-aphics/plotMeanEduByAgeGroup.png used on input line 119.
-(pdftex.def)             Requested size: 345.0pt x 230.04897pt.
+aphics/plotMeanEduByAgeGroup.png used on input line 120.
+(pdftex.def)             Requested size: 426.79135pt x 284.58792pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[7 </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanExp.pn
-g>]
+[6
 
-LaTeX Warning: Text page 8 contains only floats.
-
-[8 </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanExpByA
-geGroup.png> </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plot
-MeanExpBySkillGroup.png>]
-
-LaTeX Warning: Text page 9 contains only floats.
-
-[9 </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanEdu.pn
-g> </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanEduByA
-geGroup.png>]
-Overfull \hbox (22.11836pt too wide) in paragraph at lines 146--147
-[]\OT1/cmr/m/n/10 Total years of full time ex-pe-ri-ence gained both pre- and p
-ost-reunification.
- []
-
-[10]
+ </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanExp.png>
+] [7 </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanExpB
+yAgeGroup.png> </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/pl
+otMeanExpBySkillGroup.png>] [8 </Users/Christian/Statistik_Studium/EconProject/
+Code/Graphics/plotMeanEdu.png> </Users/Christian/Statistik_Studium/EconProject/
+Code/Graphics/plotMeanEduByAgeGroup.png>]
 </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotDiffCompariso
-nEdu.png, id=68, 2132.96875pt x 1422.31375pt>
+nEdu.png, id=57, 2132.96875pt x 1422.31375pt>
 File: /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotDiffComp
 arisonEdu.png Graphic file (type png)
 
 <use /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotDiffCompa
 risonEdu.png>
 Package pdftex.def Info: /Users/Christian/Statistik_Studium/EconProject/Code/Gr
-aphics/plotDiffComparisonEdu.png used on input line 167.
-(pdftex.def)             Requested size: 345.0pt x 230.04897pt.
+aphics/plotDiffComparisonEdu.png used on input line 168.
+(pdftex.def)             Requested size: 426.79135pt x 284.58792pt.
 
-Overfull \hbox (3.58388pt too wide) in paragraph at lines 172--173
-[]\OT1/cmr/m/n/10 Looking at the re-sult-ing re-turns to ex-pe-ri-ence a very d
-if-fer-ent pic-ture emerges: 
- []
 
-[11 </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotDiffCompa
-risonEdu.png>]
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[9
+
+]
 </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotDiffCompariso
-nExp.png, id=73, 2132.96875pt x 1422.31375pt>
+nExp.png, id=66, 2132.96875pt x 1422.31375pt>
 File: /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotDiffComp
 arisonExp.png Graphic file (type png)
 
 <use /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotDiffCompa
 risonExp.png>
 Package pdftex.def Info: /Users/Christian/Statistik_Studium/EconProject/Code/Gr
-aphics/plotDiffComparisonExp.png used on input line 182.
-(pdftex.def)             Requested size: 345.0pt x 230.04897pt.
- [12 </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotDiffComp
-arisonExp.png>]
+aphics/plotDiffComparisonExp.png used on input line 183.
+(pdftex.def)             Requested size: 426.79135pt x 284.58792pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[10 </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotDiffCompa
+risonEdu.png>]
 </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotHumanCapitalE
-xp.png, id=78, 2132.96875pt x 1422.31375pt>
+xp.png, id=71, 2132.96875pt x 1422.31375pt>
 File: /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotHumanCap
 italExp.png Graphic file (type png)
 
 <use /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotHumanCapi
 talExp.png>
 Package pdftex.def Info: /Users/Christian/Statistik_Studium/EconProject/Code/Gr
-aphics/plotHumanCapitalExp.png used on input line 211.
-(pdftex.def)             Requested size: 345.0pt x 230.04897pt.
+aphics/plotHumanCapitalExp.png used on input line 212.
+(pdftex.def)             Requested size: 426.79135pt x 284.58792pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 
 </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotHumanCapitalE
-du.png, id=79, 2132.96875pt x 1422.31375pt>
+du.png, id=72, 2132.96875pt x 1422.31375pt>
 File: /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotHumanCap
 italEdu.png Graphic file (type png)
 
 <use /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotHumanCapi
 talEdu.png>
 Package pdftex.def Info: /Users/Christian/Statistik_Studium/EconProject/Code/Gr
-aphics/plotHumanCapitalEdu.png used on input line 218.
-(pdftex.def)             Requested size: 345.0pt x 230.04897pt.
+aphics/plotHumanCapitalEdu.png used on input line 219.
+(pdftex.def)             Requested size: 426.79135pt x 284.58792pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[13 </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotHumanCapi
-talExp.png>]
+[11 </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotDiffCompa
+risonExp.png>]
+
+LaTeX Warning: Text page 12 contains only floats.
+
+
+Overfull \vbox (0.78996pt too high) has occurred while \output is active []
+
+
+[12 </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotHumanCapi
+talExp.png> </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotH
+umanCapitalEdu.png>]
 </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotDiffCompariso
-nExpByAgeGroup.png, id=85, 2132.96875pt x 1422.31375pt>
+nExpByAgeGroup.png, id=82, 2132.96875pt x 1422.31375pt>
 File: /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotDiffComp
 arisonExpByAgeGroup.png Graphic file (type png)
 
 <use /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotDiffCompa
 risonExpByAgeGroup.png>
 Package pdftex.def Info: /Users/Christian/Statistik_Studium/EconProject/Code/Gr
-aphics/plotDiffComparisonExpByAgeGroup.png used on input line 237.
-(pdftex.def)             Requested size: 345.0pt x 230.04897pt.
+aphics/plotDiffComparisonExpByAgeGroup.png used on input line 238.
+(pdftex.def)             Requested size: 426.79135pt x 284.58792pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[14 </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotHumanCapi
-talEdu.png>]
 </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotHumanCapitalE
-xpByAgeGroup.png, id=90, 2132.96875pt x 1422.31375pt>
+xpByAgeGroup.png, id=83, 2132.96875pt x 1422.31375pt>
 File: /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotHumanCap
 italExpByAgeGroup.png Graphic file (type png)
 
 <use /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotHumanCapi
 talExpByAgeGroup.png>
 Package pdftex.def Info: /Users/Christian/Statistik_Studium/EconProject/Code/Gr
-aphics/plotHumanCapitalExpByAgeGroup.png used on input line 254.
-(pdftex.def)             Requested size: 345.0pt x 230.04897pt.
+aphics/plotHumanCapitalExpByAgeGroup.png used on input line 255.
+(pdftex.def)             Requested size: 426.79135pt x 284.58792pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[15 </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotDiffCompa
+[13 </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotDiffCompa
 risonExpByAgeGroup.png>]
 </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotDiffCompariso
-nExpBySkillGroup.png, id=95, 2132.96875pt x 1422.31375pt>
+nExpBySkillGroup.png, id=89, 2132.96875pt x 1422.31375pt>
 File: /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotDiffComp
 arisonExpBySkillGroup.png Graphic file (type png)
 
 <use /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotDiffCompa
 risonExpBySkillGroup.png>
 Package pdftex.def Info: /Users/Christian/Statistik_Studium/EconProject/Code/Gr
-aphics/plotDiffComparisonExpBySkillGroup.png used on input line 281.
-(pdftex.def)             Requested size: 345.0pt x 230.04897pt.
+aphics/plotDiffComparisonExpBySkillGroup.png used on input line 282.
+(pdftex.def)             Requested size: 426.79135pt x 284.58792pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotHumanCapitalE
-xpBySkillGroup.png, id=96, 2132.96875pt x 1422.31375pt>
+xpBySkillGroup.png, id=90, 2132.96875pt x 1422.31375pt>
 File: /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotHumanCap
 italExpBySkillGroup.png Graphic file (type png)
 
 <use /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotHumanCapi
 talExpBySkillGroup.png>
 Package pdftex.def Info: /Users/Christian/Statistik_Studium/EconProject/Code/Gr
-aphics/plotHumanCapitalExpBySkillGroup.png used on input line 288.
-(pdftex.def)             Requested size: 345.0pt x 230.04897pt.
+aphics/plotHumanCapitalExpBySkillGroup.png used on input line 289.
+(pdftex.def)             Requested size: 426.79135pt x 284.58792pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[16 </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotHumanCapi
-talExpByAgeGroup.png>] [17 </Users/Christian/Statistik_Studium/EconProject/Code
-/Graphics/plotDiffComparisonExpBySkillGroup.png> </Users/Christian/Statistik_St
-udium/EconProject/Code/Graphics/plotHumanCapitalExpBySkillGroup.png>]
-No file PaperV2.bbl.
-[18
+[14 </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotHumanCapi
+talExpByAgeGroup.png>]
+Overfull \vbox (0.63716pt too high) has occurred while \output is active []
 
-] (./PaperV2.aux) ) 
+
+[15 </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotDiffCompa
+risonExpBySkillGroup.png> </Users/Christian/Statistik_Studium/EconProject/Code/
+Graphics/plotHumanCapitalExpBySkillGroup.png>]
+(/Users/Christian/Statistik_Studium/EconProject/Code/Tex/Tables/WestModelsTotal
+.tex
+Overfull \hbox (5.00426pt too wide) in paragraph at lines 5--30
+ [] 
+ []
+
+)
+(/Users/Christian/Statistik_Studium/EconProject/Code/Tex/Tables/EastModelsTotal
+.tex
+Overfull \hbox (5.00426pt too wide) in paragraph at lines 5--30
+ [] 
+ []
+
+)
+(/Users/Christian/Statistik_Studium/EconProject/Code/Tex/Tables/WestModelsNewOl
+d.tex
+Overfull \hbox (1.40912pt too wide) in paragraph at lines 5--36
+ [] 
+ []
+
+)
+(/Users/Christian/Statistik_Studium/EconProject/Code/Tex/Tables/EastModelsNewOl
+d.tex
+Overfull \hbox (1.40912pt too wide) in paragraph at lines 5--36
+ [] 
+ []
+
+)
+No file PaperV2.bbl.
+[16] [17] [18] (./PaperV2.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 2230 strings out of 493315
- 37003 string characters out of 6137904
- 92716 words of memory out of 5000000
- 5647 multiletter control sequences out of 15000+600000
- 9369 words of font info for 34 fonts, out of 8000000 for 9000
+ 2734 strings out of 493315
+ 45017 string characters out of 6137904
+ 134574 words of memory out of 5000000
+ 6124 multiletter control sequences out of 15000+600000
+ 10506 words of font info for 38 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 37i,15n,23p,1200b,229s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmbx10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmbx12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmmi10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmmi7.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r17.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7
-.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.
-pfb>
-Output written on PaperV2.pdf (18 pages, 3202342 bytes).
+ 38i,15n,32p,1200b,340s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+/usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></u
+sr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr
+/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/l
+ocal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loc
+al/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local
+/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/t
+exlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texl
+ive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive
+/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/20
+13/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2013/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2013/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2013/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2013/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on PaperV2.pdf (18 pages, 3274690 bytes).
 PDF statistics:
- 139 PDF objects out of 1000 (max. 8388607)
- 69 compressed objects within 1 object stream
+ 171 PDF objects out of 1000 (max. 8388607)
+ 93 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  101 words of extra memory for PDF output out of 10000 (max. 10000000)
 

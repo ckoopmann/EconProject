@@ -4,15 +4,19 @@ source("R/00-DataPreparation.R")
 library(ggplot2)
 library(ggthemes)
 library(stringr)
+library(texreg)
 soep <- LoadSoep(sampleSelection = c(7,9,11,12,14,16,17), MinYear = 1991, MaxYear = 2014, AgeGroups = c(0,30,50,Inf))
-savePlots <- T
+savePlots <- F
 #pgerwzt
 setnames(soep, old = "pgerwzt", new = "Tenure")
 soep[, YearFactor := as.factor(syear)]
 #Filter missing variables
 soep <- soep[OldExp >= 0 & NewExp >= 0 & Tenure >= 0 & OldEdu >= 0 & NewEdu >= 0]
-soep <- soep[, TotalExp := NewExp + OldExp]
-soep <- soep[, TotalEdu := NewEdu + OldEdu]
+soep[, TotalExp := NewExp + OldExp]
+soep[, TotalEdu := NewEdu + OldEdu]
+soep[, TotalExpSquared := TotalExp^2]
+soep[, NewExpSquared := NewExp^2]
+soep[, OldExpSquared := OldExp^2]
 #Filter out people without wage
 soep <- soep[realGrossWage > 0]
 
@@ -40,7 +44,7 @@ FullTimeDataWest <- soep[as.numeric(sampreg) == 7,]
 
 EastModelsList <- list()
 WestModelsList <- list()
-Formula <- logGrossWage ~ TotalEdu + TotalExp + I(TotalExp^2) + Tenure + sex + YearFactor
+Formula <- logGrossWage ~ TotalEdu + TotalExp + TotalExpSquared + Tenure + sex + YearFactor
 rm(CoefficientsTotalExp)
 for(yearGroup in YearGroups){
       EastModel <- lm(formula = Formula, data = FullTimeDataEast[syear %in% yearGroup,])
@@ -66,7 +70,7 @@ CoefficientsTotalExp$YearGroup <- as.ordered(CoefficientsTotalExp$YearGroup)
 ExpDiffs <- 1:10
 for(expDiff in ExpDiffs){
       TotalExpName <- paste0("TotalExpDiff0to",expDiff)
-      CoefficientsTotalExp[,TotalExpName] <- expDiff*as.numeric(as.character(CoefficientsTotalExp$TotalExp)) + expDiff^2*as.numeric(as.character(CoefficientsTotalExp$`I(TotalExp^2)`))
+      CoefficientsTotalExp[,TotalExpName] <- expDiff*as.numeric(as.character(CoefficientsTotalExp$TotalExp)) + expDiff^2*as.numeric(as.character(CoefficientsTotalExp$`TotalExpSquared`))
 }
 DiffDataTotalExp <- CoefficientsTotalExp[,c(1,2,grep(names(CoefficientsTotalExp), pattern = "0to"))]
 CoefficientsTotalExp <- as.data.table(CoefficientsTotalExp)
@@ -79,7 +83,7 @@ plotDiffTotalExpSquareYearFactor <- ggplot(DiffPlotDataTotalExp[as.numeric(Upper
       labs(x = "Year", y = "Wage Differentials across Experience") + scale_color_stata(name = "Experience Difference in Years", labels = paste0("0 - ", ExpDiffs)) #+ scale_linetype_stata(name = "Sample Region", labels = c("East Germany", "West Germany")) + theme_tufte() + geom_rangeframe()
 
 #Analysis for NEw and Old Exp in one Model
-Formula <- logGrossWage ~ OldEdu + NewEdu + OldExp + I(OldExp^2) + NewExp + I(NewExp^2) + Tenure + sex + YearFactor
+Formula <- logGrossWage ~ OldEdu + NewEdu + OldExp + OldExpSquared + NewExp + NewExpSquared + Tenure + sex + YearFactor
 rm(Coefficients)
 for(yearGroup in YearGroups){
       EastModel <- lm(formula = Formula, data = FullTimeDataEast[syear %in% yearGroup,])
@@ -105,9 +109,9 @@ Coefficients$YearGroup <- as.ordered(Coefficients$YearGroup)
 ExpDiffs <- 1:10
 for(expDiff in ExpDiffs){
       oldExpName <- paste0("OldExpDiff0to",expDiff)
-      Coefficients[,oldExpName] <- expDiff*as.numeric(as.character(Coefficients$OldExp)) + expDiff^2*as.numeric(as.character(Coefficients$`I(OldExp^2)`))
+      Coefficients[,oldExpName] <- expDiff*as.numeric(as.character(Coefficients$OldExp)) + expDiff^2*as.numeric(as.character(Coefficients$`OldExpSquared`))
       newExpName <- paste0("NewExpDiff0to",expDiff)
-      Coefficients[,newExpName] <- expDiff*as.numeric(as.character(Coefficients$NewExp)) + expDiff^2*as.numeric(as.character(Coefficients$`I(NewExp^2)`))
+      Coefficients[,newExpName] <- expDiff*as.numeric(as.character(Coefficients$NewExp)) + expDiff^2*as.numeric(as.character(Coefficients$`NewExpSquared`))
 }
 DiffDataByAgeGroup <- Coefficients[,c(1,2,grep(names(Coefficients), pattern = "0to"))]
 Coefficients <- as.data.table(Coefficients)
@@ -282,10 +286,10 @@ plotMeanEdu <- ggplot(MeanEduPlotData, aes(x = as.numeric(YearGroup),y = value, 
       labs(x = "Year", y = "Mean Education (Years)")  + scale_color_stata(name = "Type", labels = c("New Education", "Old Education", "Total Education")) + scale_x_discrete(limits = 1:length(levels(DiffPlotData$YearGroup)), name = "Period", labels = levels(DiffPlotData$YearGroup)) + scale_linetype_stata(name = "Sample Region", labels = c("West Germany", "East Germany")) + theme_tufte() + geom_rangeframe()
 
 HumanCapitalData <- merge(MeanExp, MeanEdu, by = c("YearGroup", "Region"))
-setnames(Coefficients, old = c("I(OldExp^2)","I(NewExp^2)"), new = c("OldExpSquared","NewExpSquared"))
+setnames(Coefficients, old = c("OldExpSquared","NewExpSquared"), new = c("OldExpSquared","NewExpSquared"))
 HumanCapitalData <- merge(HumanCapitalData, Coefficients[,.(YearGroup, Region, OldEdu, NewEdu, OldExp, OldExpSquared, NewExp, NewExpSquared)], by = c("YearGroup", "Region"))
 
-setnames(CoefficientsTotalExp, old = c("I(TotalExp^2)"), new = c("TotalExpSquared"))
+setnames(CoefficientsTotalExp, old = c("TotalExpSquared"), new = c("TotalExpSquared"))
 HumanCapitalData <- merge(HumanCapitalData, CoefficientsTotalExp[,.(YearGroup, Region, TotalEdu, TotalExp, TotalExpSquared)], by = c("YearGroup", "Region"))
 
 HumanCapitalData[, HCTotalEdu := as.numeric(as.character(TotalEdu))*MeanTotalEdu]
@@ -323,3 +327,16 @@ if(savePlots){
       }
 }
 
+if(saveTables){
+      #Create Tables for Model-Overviews
+      #West German Models
+      Filename = "Tex/Tables/WestModelsTotal.tex"
+      texreg(l = WestModelsList[1:6],custom.model.names = levels(soep$YearGroup), fontsize = "small", file = Filename, digits = 4, omit.coef = "YearFactor", caption = "Model Coefficients for West German Data using Model 1", label = "table:WestModelsTotal")
+      Filename = "Tex/Tables/WestModelsNewOld.tex"
+      texreg(l = WestModelsList[7:12],custom.model.names = levels(soep$YearGroup), fontsize = "small", file = Filename, digits = 4,omit.coef = "YearFactor", caption = "Model Coefficients for West German Data using Model 2", label = "table:WestModelsOldNew")
+      #East German Models
+      Filename = "Tex/Tables/EastModelsTotal.tex"
+      texreg(l = EastModelsList[1:6],custom.model.names = levels(soep$YearGroup), fontsize = "small", file = Filename, digits = 4, omit.coef = "YearFactor", caption = "Model Coefficients for East German Data using Model 1", label = "table:EastModelsTotal")
+      Filename = "Tex/Tables/EastModelsNewOld.tex"
+      texreg(l = EastModelsList[7:12],custom.model.names = levels(soep$YearGroup), fontsize = "small", file = Filename, digits = 4,omit.coef = "YearFactor", caption = "Model Coefficients for East German Data using Model 2", label = "table:EastModelsOldNew")
+}
