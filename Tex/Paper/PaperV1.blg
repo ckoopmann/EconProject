@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2013)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: PaperV1.aux
+The style file: apalike.bst
+Database file #1: EconometricProject.bib
+Warning--empty journal in wagner_german_2007
+You've used 6 entries,
+            1935 wiz_defined-function locations,
+            503 strings with 4649 characters,
+and the built_in function-call counts, 2086 in all, are:
+= -- 199
+> -- 82
+< -- 4
++ -- 32
+- -- 26
+* -- 168
+:= -- 378
+add.period$ -- 17
+call.type$ -- 6
+change.case$ -- 42
+chr.to.int$ -- 6
+cite$ -- 7
+duplicate$ -- 80
+empty$ -- 145
+format.name$ -- 38
+if$ -- 395
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 7
+newline$ -- 32
+num.names$ -- 18
+pop$ -- 42
+preamble$ -- 1
+purify$ -- 43
+quote$ -- 0
+skip$ -- 61
+stack$ -- 0
+substring$ -- 128
+swap$ -- 4
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 32
+warning$ -- 1
+while$ -- 16
+width$ -- 0
+write$ -- 75
+(There was 1 warning)

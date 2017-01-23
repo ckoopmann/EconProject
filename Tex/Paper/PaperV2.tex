@@ -1,0 +1,309 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{placeins}
+\begin{document}
+\title{Human Capital in East and West Germany post reunification}
+\author{Christian Koopmann}
+\maketitle
+
+\section{Introduction}
+This study will analyse how the returns to experience and education evolved in East and West Germany in the years since reunification. The goal is to see to what extend differences in wage levels and the wage distribution can be attributed towards different evaluations of experience as well as education gathered before and after reunification. In the case of experience one hypothesis to test is that differences in returns to experience are mainly due to the low value of work experience from the GDR in the post reunification labour market. This study will follow a Human Capital based approach. Therefore this study will also attempt to estimate the Human Capital stored in the different types of education and experience by evaluating the returns to experience and education at the time specific mean levels. Since this also accounts for the different amounts of education and experience held in the respective sub-samples, it might give a clearer picture of the factors determining the wage structure. In order to determine how differences in human capital might vary for different demographic groups this analysis will also be done separately for different age and skill groups.
+
+\section{Data and Descriptive Evidence}
+The data used in this analysis consists of the data on all full time employed individuals in the A and C samples of the Socio Economic Panel. To slow the ageing and attrition of the sample individuals from later samples were also included when the amount of Old and New Experience or Education could still be inferred with reasonable accuracy. These include mainly younger individuals for whom education was finished after reunification and therefore all experience can be assumed to be New Experience. In this section several graphs are presented illustrating the development of mean wages as well as levels of education and experience across time and region. This is also done separating the data across the same dimensions (age and skill group) as in the later sections.
+\subsection{Distribution of Wages}
+In the following section several graphs describing the development of mean gross wages (deflated to 2010 prices) across time are presented.
+
+Looking at the figures below one might draw the following conclusions about the wage distribution:
+
+\begin{enumerate}
+	\item Overall wages in East Germany rose quickly in the years after reunification. However wage growth then slowed down to a similar rate as in West Germany. At the end of the time frame significant differences persist (see Figure \ref{fig:MeanWages}).
+	\item The wage distribution across overall experience started out very flat in East Germany but changed to resemble the structure in West Germany, although at lower total wage levels (see Figure \ref{fig:MeanWagesByTotalExp}). This seems to suggest returns to Total Experience in the East rising towards West German Levels over time.
+	\item Wages in East Germany do not significantly differ with regards to Old Experience anywhere in the time frame (see Figure \ref{fig:MeanWagesByOldExp}). This suggest near zero returns to Old Experience in the East
+	\item Wages in West Germany differ significantly across Old Experience immediately after Reunification, although those differences disappear over time (see Figure \ref{fig:MeanWagesByOldExp}). This suggests returns to Old Experience converging towards zero.
+	\item The Wage Distribution across New Experience seems to be relative constant over time with no significant differences between East and West immediately visible, except for total levels (see Figure \ref{fig:MeanWagesByNewExp}). 
+	\item There seem to be rising returns to education at the upper end of the education distribution (above 15 years) in East Germany (Figure \ref{fig:MeanWagesByTotalEdu}. This suggests rising returns to University Degrees which is confirmed by the analysis in Figure \ref{fig:MeanWagesBySkillGroup}
+	\item There seems to be an overall rising wage inequality across age (see Figure \ref{fig:MeanWagesByAgeGroup}) which might be the result of the behaviour across experience described above.
+\end{enumerate} 
+ 
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=\textwidth]{/Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanWages.png}
+    \caption{Average Wages}
+    \label{fig:MeanWages}
+\end{figure}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=\textwidth]{/Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanWagesByTotalExp.png}
+    \caption{Average Wages by Total Experience}
+    \label{fig:MeanWagesByTotalExp}
+\end{figure}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=\textwidth]{/Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanWagesByOldExp.png}
+    \caption{Average Wages by Old Experience}
+    \label{fig:MeanWagesByOldExp}
+\end{figure}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=\textwidth]{/Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanWagesByNewExp.png}
+    \caption{Average Wages by New Experience}
+    \label{fig:MeanWagesByNewExp}
+\end{figure}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=\textwidth]{/Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanWagesByTotalEdu.png}
+    \caption{Average Wages by Total Education}
+    \label{fig:MeanWagesByTotalEdu}
+\end{figure}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=\textwidth]{/Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanWagesByAgeGroup.png}
+    \caption{Average Wages by Age Group}
+    \label{fig:MeanWagesByAgeGroup}
+\end{figure}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=\textwidth]{/Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanWagesBySkillGroup.png}
+    \caption{Average Wages by Skill Group}
+    \label{fig:MeanWagesBySkillGroup}
+\end{figure}
+
+\FloatBarrier
+\subsection{Distribution of Explanatory Variables}
+Regarding the distribution of experience and education in the sub-samples one can draw the following conclusions from the graphs below:
+\begin{enumerate}
+	\item Overall levels of Experience are relatively constant in East Germany while they are decreasing over time in the West. This seems to be due both to the quicker fall in Old Experience in the West as well as the faster rise in New Experience in the East (see Figure \ref{fig:MeanExp}).
+	\item Whereas the regional differences in experience levels seem to disappear over time in the young sample they tend to increase in the sample of old individuals(see Figure \ref{fig:MeanExpByAgeGroup}). This might suggest some kind of selection affect or different sample attrition.
+	\item East German college graduates have significantly more experience than their West German peers whereas this relation is turned the other way around when looking at individuals without vocational degree. For Individuals with a vocational Degree experience levels are virtually the same across regions(see Figure \ref{fig:MeanExpBySkillGroup}).
+	\item Levels of Total Education are very similar across regions, while the share of New Education is considerably higher in West Germany throughout the time frame (see Figure \ref{fig:MeanEdu}). This seems to hold for both age group sub-samples (see Figure \ref{fig:MeanEduByAgeGroup}).
+	\item Overall there is a slight rise in the mean years of Total Education. Mean years of Old and New Education converge towards each other. Overall the share of Old Education is higher in the East. (see Figure \ref{fig:MeanEdu}. This seems to be the case in both age groups (see Figure \ref{fig:MeanEduByAgeGroup}).
+\end{enumerate}
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=\textwidth]{/Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanExp.png}
+    \caption{Average Years of Experience}
+    \label{fig:MeanExp}
+\end{figure}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=\textwidth]{/Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanExpByAgeGroup.png}
+    \caption{Average Years of Experience for two Age Groups}
+    \label{fig:MeanExpByAgeGroup}
+\end{figure}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=\textwidth]{/Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanExpBySkillGroup.png}
+    \caption{Average Years of Experience for three Skill Groups}
+    \label{fig:MeanExpBySkillGroup}
+\end{figure}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=\textwidth]{/Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanEdu.png}
+    \caption{Average Years of Education}
+    \label{fig:MeanEdu}
+\end{figure}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=\textwidth]{/Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanEduByAgeGroup.png}
+    \caption{Average Years of Education for two Age Groups}
+    \label{fig:MeanEduByAgeGroup}
+\end{figure}
+
+\FloatBarrier
+\section{Determinants of Wage}
+\subsection{Model}
+In this section the returns to Education and Experience will be analysed using two different kind of models:
+\begin{equation}
+	\begin{split}
+	log(Wage) &= \beta_{1}TotalEdu + \beta_{2}TotalExp + \beta_{3} TotalExp^2\\
+	&+\beta_{4}Tenure + \beta_{5}YearDummie + \beta_{6}Sex
+	\end{split}
+\end{equation}
+\begin{equation} 
+	\begin{split}
+	log(Wage) &= \beta_{1a}OldEdu + \beta_{1b}NewEdu + \beta_{2a}OldExp \\
+	&+ \beta_{2b}NewExp + \beta_{3a}OldExp^2 + \beta_{3b}NewExp^2\\
+	&+\beta_{4}Tenure + \beta_{5}YearDummie + \beta_{6}Sex
+	\end{split}
+\end{equation}
+These Models will be fitted using pooled OLS. All following results regarding Total Education and Experience are therefore based on the first model whereas all results regarding New and Old Experience or Education are based on the second one.
+In the following I will give a short definition/explanation for each variable:
+
+\begin{description}
+	\item[TotalEdu] Total years of education gained both pre and post-reunification. This is the variable \textit{pgbilzt} from the \textit{SoepLong pgen} dataset. This variable is generated based on the type of degrees the individual obtained and is set to its minimum value 7 when no degree was obtained.
+	\item[TotalExp] Total years of full time experience gained both pre- and post-reunification. This is the variable \textit{pexpft} from the \textit{SoepLong pgen} dataset.
+	\item[Old Edu] Amount of Total Education gained before reunification. For most individuals this is set to the level of Total Education they had in 1990. For some younger individuals in later samples this is generated on the assumption that they started their education at age 6 and finished it consecutively.
+	\item[Old Exp] Amount of Total Experience gained before reunification. For most individuals this is set to the level of Total Education they had in 1990. For some younger individuals in later samples this is set to zero if they have finished their education after reunification.
+	\item[YearDummie] These are actually several dummie variables for each year in one period except the first, which is the reference year.
+	\item[Tenure] Time spent with current employer (across different positions) in years. This is the variable \textit{pgerwzt} from the \textit{SoepLong pgen} dataset.
+	\item[Sex] Dummie variable indicating whether an individual is female. 
+	 
+	
+\end{description}
+
+\subsection{Results by Region}
+First we will fit seperate Models across region and time intervals to analyse relative changes in human capital in East and West Germany. 
+To illustrate the changing returns to Education and Experience the predicted log wage gains from 0 to 5 years of experience and education are plotted in figures \ref{fig:DiffComparisonExp} and \ref{fig:DiffComparisonEdu}.  This is done, since because of the non-linearity of the Experience terms their effect would not be immediately obvious from the parameters and are not constant across the experience level. Looking at the returns to education one can observe several trends:
+\begin{enumerate}
+	\item Returns to Old Education from model 2 and returns to Total Education from model 1 are virtually identical across time and Sample Region.
+	\item Rising Returns to all kinds of education across time with East German returns rising more quickly and overtaking West German levels in the early 2000s.
+	\item Returns to New Education starting off at low levels but converging to those of Total and Old Education over time.	 
+\end{enumerate}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=\textwidth]{/Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotDiffComparisonEdu.png}
+    \caption{Predicted Log Wage Difference 5-0 Years of Education}
+    \label{fig:DiffComparisonEdu}
+\end{figure}
+
+Looking at the resulting returns to experience a very different picture emerges:
+\begin{enumerate}
+	\item Returns to New and Total Experience in West Germany constantly exceed those in the east
+	\item Returns to Old Experience in East Germany are not significantly different from 0 in any period
+	\item Returns to Old Experience in West Germany start of significantly different from 0 but converge to 0 over time.
+	\item Returns to Total Experience lie somewhere between those of New and Old Experience across the timeframe
+	\item Returns to New Experience converge to those of Total Experience
+\end{enumerate}
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=\textwidth]{/Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotDiffComparisonExp.png}
+    \caption{Predicted Log Wage Difference 5-0 Years of Experience}
+    \label{fig:DiffComparisonExp}
+\end{figure}
+
+
+As seen in Figures \ref{fig:MeanEdu} and \ref{fig:MeanExp} however the sample populations in East and West Germany also differ according to the amount of Old- and New Experience as well as Education that they hold across time. Therefore the differences in the types of human capital that East and West Germans hold cannot be judged immediately when looking at wage returns for constant levels of education and experience (as we did with a constant value of 5 years above).  
+Therefore in Figures \ref{fig:HumanCapitalExp} and \ref{fig:HumanCapitalEdu} the predicted returns are plotted when the constant level of five is replaced with year and sample region specific averages from Figures \ref{fig:MeanEdu} and \ref{fig:MeanExp}. 
+
+From figure \ref{fig:HumanCapitalExp} one can again take away several observations regarding Human Capital in Experience for East and West Germany:
+
+\begin{enumerate}
+	\item The estimated human capital in Old Experience for East Germans is constantly almost zero and even negative starting from the second period.
+	\item The West German Population starts off with a significant share of human capital in Old Experience that converges towards zero throughout the 1990's.
+	\item The human capital in new experience rises throughout the time frame with West German levels exceeding East German ones by a relatively constant margin. 
+\end{enumerate}
+
+Regarding the human capital stored in education (Figure \ref{fig:HumanCapitalEdu}) however we conclude the following:
+
+\begin{enumerate}
+	\item A rising share of human capital in education is stored in New Education although this process happens considerably faster in West than in East Germany. This is mainly due to a similar behaviour in Mean Levels of Education observed in Figure \ref{fig:MeanEdu}.
+	\item While the amount of Human Capital in Old Education is relatively constant in East Germany it falls in the West German sample.
+	\item Overall Human Capital in Education is relatively similar between sample regions, with East German levels rising above West German ones towards the end of the time frame.
+\end{enumerate}
+
+
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=\textwidth]{/Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotHumanCapitalExp.png}
+    \caption{Predicted Log Wage Difference for year and sample region specific Mean Years of Experience}
+    \label{fig:HumanCapitalExp}
+\end{figure}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=\textwidth]{/Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotHumanCapitalEdu.png}
+    \caption{Predicted Log Wage Difference for year and sample region specific Mean Years of Education}
+    \label{fig:HumanCapitalEdu}
+\end{figure}
+
+\FloatBarrier
+\subsection{Results by Region and Age Group}
+In this section we will analyse the returns when the data is not just separated by Year and Region but also by age group. In this context we separate the populations in Young and Old individuals, where the separation is done at the age of 40 years. Figures \ref{fig:DiffComparisonExpByAgeGroup} and \ref{fig:HumanCapitalExpByAgeGroup} display equivalent Graphs to those in Figures  \ref{fig:DiffComparisonExp} and \ref{fig:HumanCapitalExp} for each age group.
+
+From figure \ref{fig:DiffComparisonExpByAgeGroup} we observe the following regarding the returns to experience:
+
+\begin{enumerate}
+	\item For young individuals from both regions there is a slight decrease in the returns to new education which are almost identical to the returns of total experience from the late nineties onwards.
+	\item Young West Germans enjoy higher returns to education than their eastern peers, a difference that slowly decreases but is still visible in the last time period.
+	\item Old Germans in both regions exhibit high returns to new education immediately after reunification which quickly converge to zero and even enter negative territory in the early 2000s.
+\end{enumerate}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=\textwidth]{/Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotDiffComparisonExpByAgeGroup.png}
+    \caption{Predicted Log Wage Difference 5-0 Years of Experience}
+    \label{fig:DiffComparisonExpByAgeGroup}
+\end{figure}
+
+Regarding human capital in experience we observe the following from figure \ref{fig:HumanCapitalExpByAgeGroup}:
+
+\begin{enumerate}
+	\item For young individuals the estimated human capital in new and total experience are virtually identical throughout the time frame.
+	\item The human capital in new and total experience is relatively constant for young individuals with western levels exceeding eastern ones throughout the time frame.
+	\item The estimated human capital of old individuals shows very unstable behaviour and no clear pattern.
+
+\end{enumerate}
+
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=\textwidth]{/Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotHumanCapitalExpByAgeGroup.png}
+    \caption{Predicted Log Wage Difference for Mean Years of Experience separated by Age Group}
+    \label{fig:HumanCapitalExpByAgeGroup}
+\end{figure}
+
+\FloatBarrier
+\subsection{Results by Region and Skill Group}
+In this section the additional criteria of separation is the Skill Group of the Individual, which is defined by the highest degree (No Vocational, Vocational, College Degree).
+
+By looking at the results for returns to experience  we obtain the following observations:
+
+\begin{enumerate}
+	\item Returns to Old Experience are low across Skill Groups
+	\item Regional differences in returns to all types of experience are almost zero for workers with a vocational degree throughout the timeframe
+	\item Regional differences in the returns to experience are highest in the group of college graduates.
+\end{enumerate}
+
+From Figure \ref{fig:HumanCapitalExpBySkillGroup} we observe the following regarding Human Capital.
+
+\begin{enumerate}
+	\item Human Capital in New and Total Experience converge towards similar levels for both the College and No Vocational Degree groups. This process seems to occur more quickly though for the No Vocational Degree group.
+	\item Regional differences in Human Capital start out at smaller levels for the Vocational Degree group but stay relatively constant throughout the time frame.
+
+\end{enumerate}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=\textwidth]{/Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotDiffComparisonExpBySkillGroup.png}
+    \caption{Predicted Log Wage Difference 5-0 Years of Experience}
+    \label{fig:DiffComparisonExpBySkillGroup}
+\end{figure}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=\textwidth]{/Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotHumanCapitalExpBySkillGroup.png}
+    \caption{Predicted Log Wage Difference for Mean Years of Experience separated by Skill Group}
+    \label{fig:HumanCapitalExpBySkillGroup}
+\end{figure}
+\FloatBarrier
+
+\section{Conclusions}
+From the above evidence one might draw the following conclusions:
+\begin{enumerate}
+	\item Old Experience gathered in East Germany is practically without value on the post unification labour market, whereas those gathered in West Germany retained some value up until the late nineties.
+	\item Returns to Education are similar across type (Old/New) and Region. Also they are rising throughout the time frame.
+	\item East German individuals seem to have higher share of their Human Capital stored in Education, specifically Old Education. This seems at least partly driven by higher education levels in the East German sample and a higher proportion of Old Education.
+	\item Returns to New Experience are consistently higher in West Germany. 
+	\item The decreasing difference in returns to Total Experience (and responding Human Capital) in the nineties seems mainly due to the vanishing influence of different valuations of Old Experience. The remaining gap however seems mainly due to the difference in evaluation of New Experience and does not show a clear trend of disappearing.
+	\item In the nineties Returns to New Experience differed significantly for both College Graduates and individuals wit No Vocational Degree. Whereas this difference has vanished for the latter git has decreased much slower for the former and remains significant. Differences in the returns to experience for individuals with vocational degree are relatively small throughout the time frame.
+	\item The difference in human capital from New Experience seems to be concentrated in the group of people with College Degree.
+\end{enumerate}
+\bibliography{EconometricProject}
+
+\end{document}
+
+

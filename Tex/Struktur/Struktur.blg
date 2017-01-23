@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2013)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Struktur.aux
+The style file: apalike.bst
+Database file #1: EconometricProject.bib
+Warning--empty journal in vortmann_zur_2013
+You've used 5 entries,
+            1935 wiz_defined-function locations,
+            499 strings with 4429 characters,
+and the built_in function-call counts, 1727 in all, are:
+= -- 167
+> -- 63
+< -- 4
++ -- 22
+- -- 20
+* -- 139
+:= -- 315
+add.period$ -- 14
+call.type$ -- 5
+change.case$ -- 35
+chr.to.int$ -- 5
+cite$ -- 6
+duplicate$ -- 66
+empty$ -- 122
+format.name$ -- 29
+if$ -- 327
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 5
+newline$ -- 27
+num.names$ -- 15
+pop$ -- 31
+preamble$ -- 1
+purify$ -- 35
+quote$ -- 0
+skip$ -- 52
+stack$ -- 0
+substring$ -- 112
+swap$ -- 3
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 28
+warning$ -- 1
+while$ -- 14
+width$ -- 0
+write$ -- 63
+(There was 1 warning)

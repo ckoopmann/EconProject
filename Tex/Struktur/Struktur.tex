@@ -1,0 +1,77 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+\begin{document}
+\title{The effects of Education and individual Labor Market History in the GDR on Labor Market
+performance after Reunification}
+\author{Christian Koopmann}
+\maketitle
+
+
+\section{Topic}
+The project will analyse the question: \textit{How did returns to Education and Experience gathered before and after reunification change during the timeperiod 1990-2014? }.This analysis will be done for East- and West-Germany across age- and skill-groups to see how the relative ability to build up human capital differed with these characteristics.
+\section{Relation to previous Literature}
+This work will be in some sense an extension of \cite{gathmann_understanding_2004} in that it picks up the idea of seperating new and old work experience and estimating their returns seperately. It will extend this analysis in several ways:
+\begin{itemize}
+\item Extending the timeframe (1990-2014)
+\item Extending the approach to years of education (New vs. Old)
+\item Comparing returns in west and east Germany
+\item Including more detailed analysis of results across skill groups (see \cite{orlowski_east_2009})
+\end{itemize}
+\section{Model and Variables}
+\subsection{Equation}
+The model specifications used in this analysis will look something like the following:
+\begin{align*}
+log(HourlyWage) &= OldEducation*\beta_{1} + NewEducation*\beta_{2}\\
+& + OldExperience*\beta_{3} + NewExperience*\beta_{4}\\
+&+ Tenure*\beta_{5} + Sex*\beta_{6} + Year*\beta_{7}\\
+&+ Migrant*\beta_{8} + Industry*\beta_{9} + Occupation*\beta_{10}
+\end{align*}
+\subsection{Variables}
+\begin{description}
+\item [HourlyWage] Gross wage divided by actual hours worked per week (as opposed to agreed hours per week). Will be deflated to account for inflation. Possibly adjusted for purchasing power differences between east and west Germany, which where especially high immediatly after reunification \cite{vortmann_zur_2013} (\textbf{Does this make sense? Why not done in the literature?}).  
+\item[OldEducation] Years of education obtained pre-unification.
+\item[NewEducation] Years of education obtained post-unification.
+\item[OldExperience] Years of experience obtained pre-unification. Will most probably be included as polynomial of order 2 or 3. \textbf{Include both part and full-time experience?}
+\item[NewExperience] Years of education obtained post-unification. See above.
+\item[Tenure] Years spent working for current employer.
+\item[Sex] Dummy variable Male/Female
+\item[Year] Dummy variable indicating calender year of interview (Survey Year).
+\item[Migrant] Dummy variable indicating wether individual is east-west migrant or commuter. \textbf{Should migrants be included in analysis?}
+\item[Industry] Dummy indicating industry of employment (as in \cite{gathmann_understanding_2004}).
+\item[Occupation] Dummy indicating current occupation (as in \cite{gathmann_understanding_2004})
+\end{description}
+\subsection{Methods} 
+This analysis will most probably rely on standard pooled OLS (as in \cite{gathmann_understanding_2004}) despite possible endogeneity of Tenure and Experience. Applying alternative estimation methods as those proposed by \cite{altonji_wages_1987} and \cite{topel_specific_1990} would exceed the scope of this paper.
+
+\section{Dimensions of Analysis}
+The above model will be applied to different subsets of the data to determine the difference in returns to education and experience across different dimensions of the data:
+\subsection{East vs. West-Germany}
+The main dimension of analysis will be the location of residence of the individual divided into West- and East-Germany. This is done to analyse the difference in returns between west and east germany. The remaining dimensions help differentiating how this difference varies over time, age etc.
+\subsection{Time}
+A natural and already widely analysed Hypothesis would be to expect the differences in returns to disappear over time. To analyse models will be fitted to data in seperate timeperiods (probably of length 4 years) throughout the given timeframe (1990-2014).
+\subsection{Age}
+To find out wether the ability to accumulate human capital varies with age, models will be fitted seperately for individuals in different age groups.
+\subsection{Skill Levels}
+Another aspect of interest is the difference in human capital accumulation according to the skill level of the employee. To analyse this aspect the coefficients will be estimated seperately for Low-, Medium- and High-Skilled individuals (definition as in \cite{orlowski_east_2009}).
+\section{Data}
+This study will be based on data from the \textit{SOEP} specifically the \textit{SOEPLong} Dataset. It will mostly be based on the samples A (West Germany) and C (East Germany) with some addition from later samples to ensure enough data is available for younger age groups.
+\textbf{An open question is whether to use all available data or filter the data for example along Gender or Full/Part-Time Status}
+\section{Structure}
+The paper will be structured in the following way:
+\begin{description}
+\item[1. Introduction] Here I will motivate the question and give a short overview of the available literature.\textbf{Is it necessary to describe the political process of reunification (as done quite extensively in some literature)?}
+\item[2. Descriptive Analysis]
+Here some basic description of the data will be given. The wage distribution across the dimensions of analysis mentioned above will be analysed and graphically presented.
+\item[3. Model]
+The chosen models will be described and some aspects such as potential biases and problems with endogeneity adressed. 
+\item[4. Results]
+The returns to experience and education resulting from the fitted models will be analysed and graphed across the different dimensions of analysis mentioned above. 
+\item[5. Conclusion] The results will be sumed up and compared to results from the literature. 
+
+\end{description}
+\bibliographystyle{apalike}
+\bibliography{EconometricProject}
+\end{document}
+
+
