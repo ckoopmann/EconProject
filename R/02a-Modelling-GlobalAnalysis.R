@@ -7,6 +7,7 @@ library(stringr)
 library(texreg)
 soep <- LoadSoep(sampleSelection = c(7,9,11,12,14,16,17), MinYear = 1991, MaxYear = 2014, AgeGroups = c(0,30,50,Inf))
 savePlots <- F
+saveTables <- T
 #pgerwzt
 setnames(soep, old = "pgerwzt", new = "Tenure")
 soep[, YearFactor := as.factor(syear)]
