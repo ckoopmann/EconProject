@@ -19,6 +19,10 @@ soep <- soep[realGrossWage > 0]
 
 soep[realGrossWage > 0, logGrossWage :=  log(realGrossWage)]
 
+soep[, Region := droplevels(sampreg)]
+levels(soep$Region) <- c("West","East")
+soep[, Region := factor(Region, levels = c("West","East"))]
+
 # Models by year group
 years <- unique(as.numeric(soep$syear))
 YearsInGroup <- 4
@@ -109,6 +113,11 @@ Coefficients[,newExpName] <- expDiff*as.numeric(as.character(Coefficients$NewExp
 DiffDataBySkillGroup <- Coefficients[,c(1,2,3,grep(names(Coefficients), pattern = "0to"))]
 Coefficients <- as.data.table(Coefficients)
 
+#Throw out Old Exp Coefficients < -0.2
+Coefficients[abs(as.numeric(as.character(OldExp))*5 + as.numeric(as.character(`I(OldExp^2)`))*5^2) > 0.2,.(YearGroup, Region, SkillGroup, value = as.numeric(as.character(OldExp))*5 + as.numeric(as.character(`I(OldExp^2)`))*5^2)]
+Coefficients[abs(as.numeric(as.character(OldExp))*5 + as.numeric(as.character(`I(OldExp^2)`))*5^2) > 0.2, OldExp := NA]
+
+
 DiffPlotData <- melt(as.data.table(DiffDataBySkillGroup), id.vars = c("Region", "YearGroup","SkillGroup"))
 DiffPlotData$UpperDiff <- str_split(DiffPlotData$variable, "[^0-9]+", simplify = TRUE)[,3]
 DiffPlotData$Type <- str_sub(DiffPlotData$variable, end = 6)
@@ -182,24 +191,25 @@ plotMeanEdu <- ggplot(MeanEduPlotData, aes(x = as.numeric(YearGroup),y = value, 
       labs(x = "Year", y = "Mean Education (Years)")  + scale_color_stata(name = "Type", labels = c("New Education", "Old Education", "Total Education")) + 
       scale_x_discrete(limits = 1:length(levels(DiffPlotData$YearGroup)), name = "Period", labels = levels(DiffPlotData$YearGroup)) + 
       scale_linetype_stata(name = "Sample Region", labels = c("West Germany", "East Germany")) + theme_tufte() + geom_rangeframe() + facet_grid(SkillGroup ~.)
+#Mean Value instead of Value at Mean
+setnames(Coefficients, old = c("OldEdu", "NewEdu", "OldExp",  "I(OldExp^2)","NewExp",  "I(NewExp^2)"), new = c("OldEduCoeff", "NewEduCoeff", "OldExpCoeff", "OldExpSquaredCoeff","NewExpCoeff", "NewExpSquaredCoeff"))
+setnames(CoefficientsTotalExp, old = c("TotalEdu", "TotalExp",  "I(TotalExp^2)"), new = c("TotalEduCoeff", "TotalExpCoeff", "TotalExpSquaredCoeff"))
 
-HumanCapitalData <- merge(MeanExp, MeanEdu, by = c("YearGroup","SkillGroup", "Region"))
-setnames(Coefficients, old = c("I(OldExp^2)","I(NewExp^2)"), new = c("OldExpSquared","NewExpSquared"))
-HumanCapitalData <- merge(HumanCapitalData, Coefficients[,.(YearGroup, SkillGroup, Region, OldEdu, NewEdu, OldExp, OldExpSquared, NewExp, NewExpSquared)], by =  c("YearGroup","SkillGroup", "Region"))
+HumanCapitalData <- merge(soep[,.(YearGroup, SkillGroup, Region, TotalExp, TotalEdu, OldExp, OldEdu, NewExp, NewEdu)], Coefficients[,.(YearGroup, SkillGroup, Region, OldEduCoeff, NewEduCoeff, OldExpCoeff, OldExpSquaredCoeff, NewExpCoeff, NewExpSquaredCoeff)], by = c("YearGroup", "SkillGroup", "Region"))
+HumanCapitalData <- merge(HumanCapitalData, CoefficientsTotalExp[,.(YearGroup, SkillGroup, Region, TotalEduCoeff, TotalExpCoeff, TotalExpSquaredCoeff)], by = c("YearGroup", "SkillGroup", "Region"))
 
-setnames(CoefficientsTotalExp, old = c("I(TotalExp^2)"), new = c("TotalExpSquared"))
-HumanCapitalData <- merge(HumanCapitalData, CoefficientsTotalExp[,.(YearGroup, SkillGroup, Region, TotalEdu, TotalExp, TotalExpSquared)], by =  c("YearGroup","SkillGroup", "Region"))
+HumanCapitalData[, HCTotalEdu := as.numeric(as.character(TotalEduCoeff))*TotalEdu]
+HumanCapitalData[, HCNewEdu := as.numeric(as.character(NewEduCoeff))*NewEdu]
+HumanCapitalData[, HCOldEdu := as.numeric(as.character(OldEduCoeff))*OldEdu]
 
-HumanCapitalData[, HCTotalEdu := as.numeric(as.character(TotalEdu))*MeanTotalEdu]
-HumanCapitalData[, HCNewEdu := as.numeric(as.character(NewEdu))*MeanNewEdu]
-HumanCapitalData[, HCOldEdu := as.numeric(as.character(OldEdu))*MeanOldEdu]
+HumanCapitalData[, HCTotalExp := as.numeric(as.character(TotalExpCoeff))*TotalExp + as.numeric(as.character(TotalExpSquaredCoeff))*TotalExp^2]
+HumanCapitalData[, HCNewExp := as.numeric(as.character(NewExpCoeff))*NewExp + as.numeric(as.character(NewExpSquaredCoeff))*NewExp^2]
+HumanCapitalData[, HCOldExp := as.numeric(as.character(OldExpCoeff))*OldExp + as.numeric(as.character(OldExpSquaredCoeff))*OldExp^2]
 
-HumanCapitalData[, HCTotalExp := as.numeric(as.character(TotalExp))*MeanTotalExp + as.numeric(as.character(TotalExpSquared))*MeanTotalExp^2]
-HumanCapitalData[, HCNewExp := as.numeric(as.character(NewExp))*MeanNewExp + as.numeric(as.character(NewExpSquared))*MeanNewExp^2]
-HumanCapitalData[, HCOldExp := as.numeric(as.character(OldExp))*MeanOldExp + as.numeric(as.character(OldExpSquared))*MeanOldExp^2]
-
-HumanCapitalData <- HumanCapitalData[,.(YearGroup,SkillGroup, Region, HCTotalEdu, HCNewEdu, HCOldEdu, HCTotalExp, HCNewExp, HCOldExp)]
+HumanCapitalData <- HumanCapitalData[,.(YearGroup, SkillGroup, Region, HCTotalEdu, HCNewEdu, HCOldEdu, HCTotalExp, HCNewExp, HCOldExp)]
 HumanCapitalPlotData <- melt.data.table(HumanCapitalData, id.vars = c("YearGroup","SkillGroup","Region"))
+HumanCapitalPlotData <- HumanCapitalPlotData[,.(value = mean(value)), by = .(YearGroup, SkillGroup, Region, variable)]
+
 setnames(HumanCapitalPlotData, old = "variable", new = "Type")
 HumanCapitalPlotData[, Type := as.factor(Type)]
 levels(HumanCapitalPlotData$Type) <- c("Total Education", "New Education", "Old Education", "Total Experience", "New Experience", "Old Experience")
