@@ -1,0 +1,16 @@
+\beamer@endinputifotherversion {3.26pt}
+\select@language {english}
+\beamer@sectionintoc {2}{Introduction}{3}{0}{1}
+\beamer@subsectionintoc {2}{1}{Problem Definition}{3}{0}{1}
+\beamer@subsectionintoc {2}{2}{Literature Overview}{5}{0}{1}
+\beamer@subsectionintoc {2}{3}{Approach}{8}{0}{1}
+\beamer@sectionintoc {3}{Explorative Data Analysis}{10}{0}{2}
+\beamer@subsectionintoc {3}{1}{Wage Distribution}{12}{0}{2}
+\beamer@subsectionintoc {3}{2}{Explanatory Variables}{17}{0}{2}
+\beamer@sectionintoc {4}{Modelling}{20}{0}{3}
+\beamer@subsectionintoc {4}{1}{Model Equation}{20}{0}{3}
+\beamer@subsectionintoc {4}{2}{Estimation}{22}{0}{3}
+\beamer@sectionintoc {5}{Results}{25}{0}{4}
+\beamer@subsectionintoc {5}{1}{Global Analysis}{25}{0}{4}
+\beamer@subsectionintoc {5}{2}{Analysis by Skill Group}{30}{0}{4}
+\beamer@subsectionintoc {5}{3}{Conclusion}{33}{0}{4}
