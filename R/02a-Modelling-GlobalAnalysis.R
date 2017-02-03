@@ -6,8 +6,8 @@ library(ggthemes)
 library(stringr)
 library(texreg)
 soep <- LoadSoep(sampleSelection = c(7,9,11,12,14,16,17), MinYear = 1991, MaxYear = 2014, AgeGroups = c(0,30,50,Inf))
-savePlots <- T
-saveTables <- F
+savePlots <- F
+saveTables <- T
 #pgerwzt
 setnames(soep, old = "pgerwzt", new = "Tenure")
 soep[, YearFactor := as.factor(syear)]
@@ -337,15 +337,15 @@ if(savePlots){
 if(saveTables){
       #Create Tables for Model-Overviews
       #West German Models
-      Filename = "Tex/Tables/WestModelsTotal.tex"
-      texreg(l = WestModelsList[1:6],custom.model.names = levels(soep$YearGroup), fontsize = "small", file = Filename, digits = 4, omit.coef = "YearFactor", caption = "Model Coefficients for West German Data using Model 1", label = "table:WestModelsTotal")
-      Filename = "Tex/Tables/WestModelsNewOld.tex"
-      texreg(l = WestModelsList[7:12],custom.model.names = levels(soep$YearGroup), fontsize = "small", file = Filename, digits = 4,omit.coef = "YearFactor", caption = "Model Coefficients for West German Data using Model 2", label = "table:WestModelsOldNew")
+      Filename = "Tex/Tables/WestModelsTotalPresentation.tex"
+      texreg(l = WestModelsList[c(1,3,6)],custom.model.names = levels(soep$YearGroup)[c(1,3,6)], fontsize = "tiny", file = Filename, digits = 4, omit.coef = "(YearFactor)|(sex)|(Tenure)" , caption = "Model Coefficients for West German Data using Model 1", label = "table:WestModelsTotal")
+      Filename = "Tex/Tables/WestModelsNewOldPresentation.tex"
+      texreg(l = WestModelsList[c(7,9,12)],custom.model.names = levels(soep$YearGroup)[c(1,3,6)], fontsize = "tiny", file = Filename, digits = 4,omit.coef = "(YearFactor)|(sex)|(Tenure)", caption = "Model Coefficients for West German Data using Model 2", label = "table:WestModelsOldNew")
       #East German Models
-      Filename = "Tex/Tables/EastModelsTotal.tex"
-      texreg(l = EastModelsList[1:6],custom.model.names = levels(soep$YearGroup), fontsize = "small", file = Filename, digits = 4, omit.coef = "YearFactor", caption = "Model Coefficients for East German Data using Model 1", label = "table:EastModelsTotal")
-      Filename = "Tex/Tables/EastModelsNewOld.tex"
-      texreg(l = EastModelsList[7:12],custom.model.names = levels(soep$YearGroup), fontsize = "small", file = Filename, digits = 4,omit.coef = "YearFactor", caption = "Model Coefficients for East German Data using Model 2", label = "table:EastModelsOldNew")
+      Filename = "Tex/Tables/EastModelsTotalPresentation.tex"
+      texreg(l = EastModelsList[c(1,3,6)],custom.model.names = levels(soep$YearGroup)[c(1,3,6)], fontsize = "tiny", file = Filename, digits = 4, omit.coef = "(YearFactor)|(sex)|(Tenure)", caption = "Model Coefficients for East German Data using Model 1", label = "table:EastModelsTotal")
+      Filename = "Tex/Tables/EastModelsNewOldPresentation.tex"
+      texreg(l = EastModelsList[c(7,9,12)],custom.model.names = levels(soep$YearGroup)[c(1,3,6)], fontsize = "tiny", file = Filename, digits = 4,omit.coef = "(YearFactor)|(sex)|(Tenure)", caption = "Model Coefficients for East German Data using Model 2", label = "table:EastModelsOldNew")
 }
 
 

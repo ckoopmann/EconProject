@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.16)  30 JAN 2017 18:47
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.16)  3 FEB 2017 09:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -971,14 +971,14 @@ Overfull \hbox (2.13672pt too wide) has occurred while \output is active
 
 [4
 
-] (./Presentation.toc)
+]
 Overfull \hbox (2.13672pt too wide) has occurred while \output is active
   []  
  []
 
 [5
 
-]
+] (./Presentation.toc)
 Overfull \hbox (2.13672pt too wide) has occurred while \output is active
   []  
  []
@@ -992,77 +992,61 @@ Overfull \hbox (2.13672pt too wide) has occurred while \output is active
 
 [7
 
-] (./Presentation.toc)
+]
 Overfull \hbox (2.13672pt too wide) has occurred while \output is active
   []  
  []
 
 [8
 
-]
+] (./Presentation.toc)
 Overfull \hbox (2.13672pt too wide) has occurred while \output is active
   []  
  []
 
 [9
 
-] (./Presentation.toc)
+]
 Overfull \hbox (2.13672pt too wide) has occurred while \output is active
   []  
  []
 
 [10
 
-]
+] (./Presentation.toc)
 Overfull \hbox (2.13672pt too wide) has occurred while \output is active
   []  
  []
 
 [11
 
-] (./Presentation.toc)
+]
 Overfull \hbox (2.13672pt too wide) has occurred while \output is active
   []  
  []
 
 [12
 
-]
-</Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanWages.png
-, id=277, 2132.96875pt x 1422.31375pt>
-File: /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanWage
-s.png Graphic file (type png)
-
-<use /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanWages
-.png>
-Package pdftex.def Info: /Users/Christian/Statistik_Studium/EconProject/Code/Gr
-aphics/plotMeanWages.png used on input line 166.
-(pdftex.def)             Requested size: 245.83282pt x 163.92073pt.
-
-Overfull \vbox (22.69258pt too high) detected at line 166
- []
-
-
+] (./Presentation.toc)
 Overfull \hbox (2.13672pt too wide) has occurred while \output is active
   []  
  []
 
 [13
 
- </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanWages.pn
-g>]
-</Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanWagesByTo
-talExp.png, id=290, 2132.96875pt x 1422.31375pt>
+]
+</Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanWages.png
+, id=286, 2132.96875pt x 1422.31375pt>
 File: /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanWage
-sByTotalExp.png Graphic file (type png)
+s.png Graphic file (type png)
 
 <use /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanWages
-ByTotalExp.png>
+.png>
 Package pdftex.def Info: /Users/Christian/Statistik_Studium/EconProject/Code/Gr
-aphics/plotMeanWagesByTotalExp.png used on input line 176.
+aphics/plotMeanWages.png used on input line 175.
 (pdftex.def)             Requested size: 245.83282pt x 163.92073pt.
 
-Overfull \vbox (22.69258pt too high) detected at line 176
+Overfull \vbox (22.69258pt too high) detected at line 175
  []
 
 
@@ -1072,20 +1056,20 @@ Overfull \hbox (2.13672pt too wide) has occurred while \output is active
 
 [14
 
- </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanWagesByT
-otalExp.png>]
-</Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanWagesByOl
-dExp.png, id=301, 2132.96875pt x 1422.31375pt>
+ </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanWages.pn
+g>]
+</Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanWagesByTo
+talExp.png, id=298, 2132.96875pt x 1422.31375pt>
 File: /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanWage
-sByOldExp.png Graphic file (type png)
+sByTotalExp.png Graphic file (type png)
 
 <use /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanWages
-ByOldExp.png>
+ByTotalExp.png>
 Package pdftex.def Info: /Users/Christian/Statistik_Studium/EconProject/Code/Gr
-aphics/plotMeanWagesByOldExp.png used on input line 186.
+aphics/plotMeanWagesByTotalExp.png used on input line 185.
 (pdftex.def)             Requested size: 245.83282pt x 163.92073pt.
 
-Overfull \vbox (22.69258pt too high) detected at line 186
+Overfull \vbox (22.69258pt too high) detected at line 185
  []
 
 
@@ -1095,20 +1079,20 @@ Overfull \hbox (2.13672pt too wide) has occurred while \output is active
 
 [15
 
- </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanWagesByO
-ldExp.png>]
-</Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanWagesByTo
-talEdu.png, id=312, 2132.96875pt x 1422.31375pt>
+ </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanWagesByT
+otalExp.png>]
+</Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanWagesByOl
+dExp.png, id=309, 2132.96875pt x 1422.31375pt>
 File: /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanWage
-sByTotalEdu.png Graphic file (type png)
+sByOldExp.png Graphic file (type png)
 
 <use /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanWages
-ByTotalEdu.png>
+ByOldExp.png>
 Package pdftex.def Info: /Users/Christian/Statistik_Studium/EconProject/Code/Gr
-aphics/plotMeanWagesByTotalEdu.png used on input line 196.
+aphics/plotMeanWagesByOldExp.png used on input line 195.
 (pdftex.def)             Requested size: 245.83282pt x 163.92073pt.
 
-Overfull \vbox (19.8996pt too high) detected at line 196
+Overfull \vbox (22.69258pt too high) detected at line 195
  []
 
 
@@ -1118,50 +1102,50 @@ Overfull \hbox (2.13672pt too wide) has occurred while \output is active
 
 [16
 
+ </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanWagesByO
+ldExp.png>]
+</Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanWagesByTo
+talEdu.png, id=320, 2132.96875pt x 1422.31375pt>
+File: /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanWage
+sByTotalEdu.png Graphic file (type png)
+
+<use /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanWages
+ByTotalEdu.png>
+Package pdftex.def Info: /Users/Christian/Statistik_Studium/EconProject/Code/Gr
+aphics/plotMeanWagesByTotalEdu.png used on input line 205.
+(pdftex.def)             Requested size: 245.83282pt x 163.92073pt.
+
+Overfull \vbox (19.8996pt too high) detected at line 205
+ []
+
+
+Overfull \hbox (2.13672pt too wide) has occurred while \output is active
+  []  
+ []
+
+[17
+
  </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanWagesByT
 otalEdu.png>] (./Presentation.toc)
 Overfull \hbox (2.13672pt too wide) has occurred while \output is active
   []  
  []
 
-[17
+[18
 
 ]
 </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanExp.png, 
-id=344, 2132.96875pt x 1422.31375pt>
+id=352, 2132.96875pt x 1422.31375pt>
 File: /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanExp.
 png Graphic file (type png)
 
 <use /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanExp.p
 ng>
 Package pdftex.def Info: /Users/Christian/Statistik_Studium/EconProject/Code/Gr
-aphics/plotMeanExp.png used on input line 215.
+aphics/plotMeanExp.png used on input line 224.
 (pdftex.def)             Requested size: 245.83282pt x 163.92073pt.
 
-Overfull \vbox (23.6671pt too high) detected at line 215
- []
-
-
-Overfull \hbox (2.13672pt too wide) has occurred while \output is active
-  []  
- []
-
-[18
-
- </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanExp.png>
-]
-</Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanEdu.png, 
-id=355, 2132.96875pt x 1422.31375pt>
-File: /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanEdu.
-png Graphic file (type png)
-
-<use /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanEdu.p
-ng>
-Package pdftex.def Info: /Users/Christian/Statistik_Studium/EconProject/Code/Gr
-aphics/plotMeanEdu.png used on input line 225.
-(pdftex.def)             Requested size: 245.83282pt x 163.92073pt.
-
-Overfull \vbox (22.69258pt too high) detected at line 225
+Overfull \vbox (23.6671pt too high) detected at line 224
  []
 
 
@@ -1171,29 +1155,45 @@ Overfull \hbox (2.13672pt too wide) has occurred while \output is active
 
 [19
 
- </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanEdu.png>
-] (./Presentation.toc)
+ </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanExp.png>
+]
+</Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanEdu.png, 
+id=364, 2132.96875pt x 1422.31375pt>
+File: /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanEdu.
+png Graphic file (type png)
+
+<use /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanEdu.p
+ng>
+Package pdftex.def Info: /Users/Christian/Statistik_Studium/EconProject/Code/Gr
+aphics/plotMeanEdu.png used on input line 234.
+(pdftex.def)             Requested size: 245.83282pt x 163.92073pt.
+
+Overfull \vbox (22.69258pt too high) detected at line 234
+ []
+
+
 Overfull \hbox (2.13672pt too wide) has occurred while \output is active
   []  
  []
 
 [20
 
-]
+ </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotMeanEdu.png>
+] (./Presentation.toc)
 Overfull \hbox (2.13672pt too wide) has occurred while \output is active
   []  
  []
 
 [21
 
-] (./Presentation.toc)
+]
 Overfull \hbox (2.13672pt too wide) has occurred while \output is active
   []  
  []
 
 [22
 
-]
+] (./Presentation.toc)
 Overfull \hbox (2.13672pt too wide) has occurred while \output is active
   []  
  []
@@ -1207,49 +1207,33 @@ Overfull \hbox (2.13672pt too wide) has occurred while \output is active
 
 [24
 
-] (./Presentation.toc)
+]
 Overfull \hbox (2.13672pt too wide) has occurred while \output is active
   []  
  []
 
 [25
 
-]
-</Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotDiffCompariso
-nEdu.png, id=468, 2132.96875pt x 1422.31375pt>
-File: /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotDiffComp
-arisonEdu.png Graphic file (type png)
-
-<use /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotDiffCompa
-risonEdu.png>
-Package pdftex.def Info: /Users/Christian/Statistik_Studium/EconProject/Code/Gr
-aphics/plotDiffComparisonEdu.png used on input line 300.
-(pdftex.def)             Requested size: 245.83282pt x 163.92073pt.
-
-Overfull \vbox (1.8996pt too high) detected at line 300
- []
-
-
+] (./Presentation.toc)
 Overfull \hbox (2.13672pt too wide) has occurred while \output is active
   []  
  []
 
 [26
 
- </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotDiffComparis
-onEdu.png>]
+]
 </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotDiffCompariso
-nExp.png, id=479, 2132.96875pt x 1422.31375pt>
+nEdu.png, id=476, 2132.96875pt x 1422.31375pt>
 File: /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotDiffComp
-arisonExp.png Graphic file (type png)
+arisonEdu.png Graphic file (type png)
 
 <use /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotDiffCompa
-risonExp.png>
+risonEdu.png>
 Package pdftex.def Info: /Users/Christian/Statistik_Studium/EconProject/Code/Gr
-aphics/plotDiffComparisonExp.png used on input line 309.
+aphics/plotDiffComparisonEdu.png used on input line 309.
 (pdftex.def)             Requested size: 245.83282pt x 163.92073pt.
 
-Overfull \vbox (4.69258pt too high) detected at line 309
+Overfull \vbox (1.8996pt too high) detected at line 309
  []
 
 
@@ -1260,16 +1244,16 @@ Overfull \hbox (2.13672pt too wide) has occurred while \output is active
 [27
 
  </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotDiffComparis
-onExp.png>]
-</Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotHumanCapitalE
-du.png, id=490, 2132.96875pt x 1422.31375pt>
-File: /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotHumanCap
-italEdu.png Graphic file (type png)
+onEdu.png>]
+</Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotDiffCompariso
+nExp.png, id=487, 2132.96875pt x 1422.31375pt>
+File: /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotDiffComp
+arisonExp.png Graphic file (type png)
 
-<use /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotHumanCapi
-talEdu.png>
+<use /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotDiffCompa
+risonExp.png>
 Package pdftex.def Info: /Users/Christian/Statistik_Studium/EconProject/Code/Gr
-aphics/plotHumanCapitalEdu.png used on input line 318.
+aphics/plotDiffComparisonExp.png used on input line 318.
 (pdftex.def)             Requested size: 245.83282pt x 163.92073pt.
 
 Overfull \vbox (4.69258pt too high) detected at line 318
@@ -1282,20 +1266,20 @@ Overfull \hbox (2.13672pt too wide) has occurred while \output is active
 
 [28
 
- </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotHumanCapital
-Edu.png>]
+ </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotDiffComparis
+onExp.png>]
 </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotHumanCapitalE
-xp.png, id=501, 2132.96875pt x 1422.31375pt>
+du.png, id=498, 2132.96875pt x 1422.31375pt>
 File: /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotHumanCap
-italExp.png Graphic file (type png)
+italEdu.png Graphic file (type png)
 
 <use /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotHumanCapi
-talExp.png>
+talEdu.png>
 Package pdftex.def Info: /Users/Christian/Statistik_Studium/EconProject/Code/Gr
-aphics/plotHumanCapitalExp.png used on input line 328.
+aphics/plotHumanCapitalEdu.png used on input line 327.
 (pdftex.def)             Requested size: 245.83282pt x 163.92073pt.
 
-Overfull \vbox (4.69258pt too high) detected at line 328
+Overfull \vbox (4.69258pt too high) detected at line 327
  []
 
 
@@ -1306,60 +1290,54 @@ Overfull \hbox (2.13672pt too wide) has occurred while \output is active
 [29
 
  </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotHumanCapital
-Exp.png>] (./Presentation.toc)
+Edu.png>]
+</Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotHumanCapitalE
+xp.png, id=509, 2132.96875pt x 1422.31375pt>
+File: /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotHumanCap
+italExp.png Graphic file (type png)
+
+<use /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotHumanCapi
+talExp.png>
+Package pdftex.def Info: /Users/Christian/Statistik_Studium/EconProject/Code/Gr
+aphics/plotHumanCapitalExp.png used on input line 337.
+(pdftex.def)             Requested size: 245.83282pt x 163.92073pt.
+
+Overfull \vbox (4.69258pt too high) detected at line 337
+ []
+
+
 Overfull \hbox (2.13672pt too wide) has occurred while \output is active
   []  
  []
 
 [30
 
-]
-</Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotDiffCompariso
-nExpBySkillGroup.png, id=534, 2132.96875pt x 1422.31375pt>
-File: /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotDiffComp
-arisonExpBySkillGroup.png Graphic file (type png)
-
-<use /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotDiffCompa
-risonExpBySkillGroup.png>
-Package pdftex.def Info: /Users/Christian/Statistik_Studium/EconProject/Code/Gr
-aphics/plotDiffComparisonExpBySkillGroup.png used on input line 348.
-(pdftex.def)             Requested size: 245.83282pt x 163.92073pt.
-
-Overfull \vbox (4.69258pt too high) detected at line 348
- []
-
-
+ </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotHumanCapital
+Exp.png>]
+(/Users/Christian/Statistik_Studium/EconProject/Code/Tex/Tables/WestModelsTotal
+Presentation.tex)
 Overfull \hbox (2.13672pt too wide) has occurred while \output is active
   []  
  []
 
 [31
 
- </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotDiffComparis
-onExpBySkillGroup.png>]
-</Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotHumanCapitalE
-xpBySkillGroup.png, id=546, 2132.96875pt x 1422.31375pt>
-File: /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotHumanCap
-italExpBySkillGroup.png Graphic file (type png)
-
-<use /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotHumanCapi
-talExpBySkillGroup.png>
-Package pdftex.def Info: /Users/Christian/Statistik_Studium/EconProject/Code/Gr
-aphics/plotHumanCapitalExpBySkillGroup.png used on input line 358.
-(pdftex.def)             Requested size: 245.83282pt x 163.92073pt.
-
-Overfull \vbox (22.69258pt too high) detected at line 358
- []
-
-
+]
+(/Users/Christian/Statistik_Studium/EconProject/Code/Tex/Tables/EastModelsTotal
+Presentation.tex)
 Overfull \hbox (2.13672pt too wide) has occurred while \output is active
   []  
  []
 
 [32
 
- </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotHumanCapital
-ExpBySkillGroup.png>] (./Presentation.toc)
+]
+(/Users/Christian/Statistik_Studium/EconProject/Code/Tex/Tables/WestModelsNewOl
+dPresentation.tex)
+Overfull \vbox (4.30956pt too high) detected at line 350
+ []
+
+
 Overfull \hbox (2.13672pt too wide) has occurred while \output is active
   []  
  []
@@ -1367,26 +1345,99 @@ Overfull \hbox (2.13672pt too wide) has occurred while \output is active
 [33
 
 ]
+(/Users/Christian/Statistik_Studium/EconProject/Code/Tex/Tables/EastModelsNewOl
+dPresentation.tex)
+Overfull \vbox (4.30956pt too high) detected at line 354
+ []
+
+
 Overfull \hbox (2.13672pt too wide) has occurred while \output is active
   []  
  []
 
 [34
 
-]
+] (./Presentation.toc)
 Overfull \hbox (2.13672pt too wide) has occurred while \output is active
   []  
  []
 
 [35
 
+]
+</Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotDiffCompariso
+nExpBySkillGroup.png, id=582, 2132.96875pt x 1422.31375pt>
+File: /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotDiffComp
+arisonExpBySkillGroup.png Graphic file (type png)
+
+<use /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotDiffCompa
+risonExpBySkillGroup.png>
+Package pdftex.def Info: /Users/Christian/Statistik_Studium/EconProject/Code/Gr
+aphics/plotDiffComparisonExpBySkillGroup.png used on input line 373.
+(pdftex.def)             Requested size: 245.83282pt x 163.92073pt.
+
+Overfull \vbox (4.69258pt too high) detected at line 373
+ []
+
+
+Overfull \hbox (2.13672pt too wide) has occurred while \output is active
+  []  
+ []
+
+[36
+
+ </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotDiffComparis
+onExpBySkillGroup.png>]
+</Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotHumanCapitalE
+xpBySkillGroup.png, id=593, 2132.96875pt x 1422.31375pt>
+File: /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotHumanCap
+italExpBySkillGroup.png Graphic file (type png)
+
+<use /Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotHumanCapi
+talExpBySkillGroup.png>
+Package pdftex.def Info: /Users/Christian/Statistik_Studium/EconProject/Code/Gr
+aphics/plotHumanCapitalExpBySkillGroup.png used on input line 383.
+(pdftex.def)             Requested size: 245.83282pt x 163.92073pt.
+
+Overfull \vbox (22.69258pt too high) detected at line 383
+ []
+
+
+Overfull \hbox (2.13672pt too wide) has occurred while \output is active
+  []  
+ []
+
+[37
+
+ </Users/Christian/Statistik_Studium/EconProject/Code/Graphics/plotHumanCapital
+ExpBySkillGroup.png>] (./Presentation.toc)
+Overfull \hbox (2.13672pt too wide) has occurred while \output is active
+  []  
+ []
+
+[38
 
 ]
 Overfull \hbox (2.13672pt too wide) has occurred while \output is active
   []  
  []
 
-[36
+[39
+
+]
+Overfull \hbox (2.13672pt too wide) has occurred while \output is active
+  []  
+ []
+
+[40
+
+
+]
+Overfull \hbox (2.13672pt too wide) has occurred while \output is active
+  []  
+ []
+
+[41
 
 
 ] (./Presentation.bbl)
@@ -1394,15 +1445,22 @@ Overfull \hbox (2.13672pt too wide) has occurred while \output is active
   []  
  []
 
-[37
+[42
 
  </usr/local/texlive/2013/texmf-dist/tex/latex/beamer/art/beamericonbook.pdf>]
 Overfull \hbox (2.13672pt too wide) has occurred while \output is active
   []  
  []
 
-[38
+[43
 
+
+]
+Overfull \hbox (2.13672pt too wide) has occurred while \output is active
+  []  
+ []
+
+[44
 
 ]
 \tf@nav=\write6
@@ -1414,52 +1472,55 @@ Overfull \hbox (2.13672pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `Presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 402.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 402.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 432.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 432.
  (./Presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 402.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 402.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 432.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 432.
 Package rerunfilecheck Info: File `Presentation.out' has not changed.
-(rerunfilecheck)             Checksum: 077BCE237EB99910EA7E51AF2C3E6B21;850.
+(rerunfilecheck)             Checksum: 643365E4FC23BFBCB0C07109CB58BD9F;850.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 402.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 432.
  ) 
 Here is how much of TeX's memory you used:
- 18023 strings out of 493315
- 328669 string characters out of 6137904
- 401169 words of memory out of 5000000
- 20897 multiletter control sequences out of 15000+600000
- 26590 words of font info for 73 fonts, out of 8000000 for 9000
+ 18081 strings out of 493315
+ 330250 string characters out of 6137904
+ 409325 words of memory out of 5000000
+ 20925 multiletter control sequences out of 15000+600000
+ 27353 words of font info for 74 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  49i,18n,53p,401b,456s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 </usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
 /usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
-usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></us
-r/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr
-/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/l
-ocal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/lo
-cal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/loca
-l/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/
-texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/te
-xlive/2013/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/loca
-l/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfsi0600.pfb></usr/local/
-texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfsi0800.pfb></usr/local/te
-xlive/2013/texmf-dist/fonts/type1/public/cm-super/sfsi1095.pfb></usr/local/texl
-ive/2013/texmf-dist/fonts/type1/public/cm-super/sfss0600.pfb></usr/local/texliv
-e/2013/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb></usr/local/texlive/
-2013/texmf-dist/fonts/type1/public/cm-super/sfss0900.pfb></usr/local/texlive/20
-13/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/local/texlive/2013
-/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/local/texlive/2013/t
-exmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb>
-Output written on Presentation.pdf (38 pages, 2064552 bytes).
+usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></us
+r/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/
+local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/l
+ocal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/loc
+al/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loca
+l/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/
+texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/te
+xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texl
+ive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texliv
+e/2013/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/te
+xlive/2013/texmf-dist/fonts/type1/public/cm-super/sfsi0600.pfb></usr/local/texl
+ive/2013/texmf-dist/fonts/type1/public/cm-super/sfsi0800.pfb></usr/local/texliv
+e/2013/texmf-dist/fonts/type1/public/cm-super/sfsi1095.pfb></usr/local/texlive/
+2013/texmf-dist/fonts/type1/public/cm-super/sfss0500.pfb></usr/local/texlive/20
+13/texmf-dist/fonts/type1/public/cm-super/sfss0600.pfb></usr/local/texlive/2013
+/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb></usr/local/texlive/2013/t
+exmf-dist/fonts/type1/public/cm-super/sfss0900.pfb></usr/local/texlive/2013/tex
+mf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/local/texlive/2013/texmf
+-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/local/texlive/2013/texmf-d
+ist/fonts/type1/public/cm-super/sfsx1440.pfb>
+Output written on Presentation.pdf (44 pages, 2097718 bytes).
 PDF statistics:
- 713 PDF objects out of 1000 (max. 8388607)
- 611 compressed objects within 7 object streams
- 107 named destinations out of 1000 (max. 500000)
+ 782 PDF objects out of 1000 (max. 8388607)
+ 671 compressed objects within 7 object streams
+ 123 named destinations out of 1000 (max. 500000)
  225 words of extra memory for PDF output out of 10000 (max. 10000000)
 
