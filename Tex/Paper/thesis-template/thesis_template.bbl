@@ -1,0 +1,31 @@
+\begin{thebibliography}{5}
+\newcommand{\enquote}[1]{``#1''}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[\protect\citeauthoryear{Burda, Schmidt, and {others}}{Burda
+  et~al.}{1997}]{burda_getting_1997}
+\textsc{Burda, M.~C., C.~M. Schmidt, and {others}} (1997): \emph{Getting behind
+  the {East}-{West} wage differential: {Theory} and evidence}, Citeseer.
+
+\bibitem[\protect\citeauthoryear{Gathmann}{Gathmann}{2004}]{gathmann_understanding_2004}
+\textsc{Gathmann, C.} (2004): \emph{Understanding {Changes} in {Relative}
+  {Wages} during {East} {Germany}’s {Transition}’}, Stanford University.
+
+\bibitem[\protect\citeauthoryear{Jurajda and Harmgart}{Jurajda and
+  Harmgart}{2007}]{jurajda_when_2007}
+\textsc{Jurajda, �. and H.~Harmgart} (2007): \enquote{When do female
+  occupations pay more?} \emph{Journal of Comparative Economics}, 35, 170--187.
+
+\bibitem[\protect\citeauthoryear{Krueger and Pischke}{Krueger and
+  Pischke}{1992}]{krueger_comparative_1992}
+\textsc{Krueger, A.~B. and J.-S. Pischke} (1992): \enquote{A comparative
+  analysis of {East} and {West} {German} labor markets: before and after
+  unification,} Tech. rep., National Bureau of Economic Research.
+
+\bibitem[\protect\citeauthoryear{Orlowski and Riphahn}{Orlowski and
+  Riphahn}{2009}]{orlowski_east_2009}
+\textsc{Orlowski, R. and R.~T. Riphahn} (2009): \enquote{The {East} {German}
+  wage structure after transition1,} \emph{Economics of Transition}, 17,
+  629--659.
+
+\end{thebibliography}

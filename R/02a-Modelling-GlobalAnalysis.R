@@ -6,8 +6,8 @@ library(ggthemes)
 library(stringr)
 library(texreg)
 soep <- LoadSoep(sampleSelection = c(7,9,11,12,14,16,17), MinYear = 1991, MaxYear = 2014, AgeGroups = c(0,30,50,Inf))
-savePlots <- F
-saveTables <- T
+savePlots <- T
+saveTables <- F
 #pgerwzt
 setnames(soep, old = "pgerwzt", new = "Tenure")
 soep[, YearFactor := as.factor(syear)]
@@ -315,15 +315,15 @@ levels(HumanCapitalPlotData$Type) <- c("Total Education", "New Education", "Old 
 HumanCapitalPlotData[, Type := factor(Type , levels = c("New Education", "Old Education", "Total Education","New Experience", "Old Experience", "Total Experience"))]
 
 plotHumanCapital <- ggplot(HumanCapitalPlotData, aes(x = as.numeric(YearGroup),y = value, col = Type)) + geom_line(aes(lty = Region)) + geom_point() +
-      labs(x = "Year", y = "Log Wage Gain for Mean Value")  + scale_color_stata(name = "Type") + scale_x_discrete(limits = 1:length(levels(DiffPlotData$YearGroup)), name = "Period", labels = levels(DiffPlotData$YearGroup)) + scale_linetype_stata(name = "Sample Region") + theme_tufte() + geom_rangeframe()
+      labs(x = "Year", y = "Mean Log Wage Gain ")  + scale_color_stata(name = "Type") + scale_x_discrete(limits = 1:length(levels(DiffPlotData$YearGroup)), name = "Period", labels = levels(DiffPlotData$YearGroup)) + scale_linetype_stata(name = "Sample Region") + theme_tufte() + geom_rangeframe()
 
 EduSelection <- c("Total Education", "New Education", "Old Education")
 plotHumanCapitalEdu <- ggplot(HumanCapitalPlotData[Type %in% EduSelection,], aes(x = as.numeric(YearGroup),y = value, col = Type)) + geom_line(aes(lty = Region)) + geom_point() +
-      labs(x = "Year", y = "Log Wage Gain for Mean Value")  + scale_color_stata(name = "Type") + scale_x_discrete(limits = 1:length(levels(DiffPlotData$YearGroup)), name = "Period", labels = levels(DiffPlotData$YearGroup)) + scale_linetype_stata(name = "Sample Region") + theme_tufte() + geom_rangeframe()
+      labs(x = "Year", y = "Mean Log Wage Gain")  + scale_color_stata(name = "Type") + scale_x_discrete(limits = 1:length(levels(DiffPlotData$YearGroup)), name = "Period", labels = levels(DiffPlotData$YearGroup)) + scale_linetype_stata(name = "Sample Region") + theme_tufte() + geom_rangeframe()
 
 ExpSelection <- c("Total Experience", "New Experience", "Old Experience")
 plotHumanCapitalExp <- ggplot(HumanCapitalPlotData[Type %in% ExpSelection,], aes(x = as.numeric(YearGroup),y = value, col = Type)) + geom_line(aes(lty = Region)) + geom_point() +
-      labs(x = "Year", y = "Log Wage Gain for Mean Value")  + scale_color_stata(name = "Type") + scale_x_discrete(limits = 1:length(levels(DiffPlotData$YearGroup)), name = "Period", labels = levels(DiffPlotData$YearGroup)) + scale_linetype_stata(name = "Sample Region") + theme_tufte() + geom_rangeframe()
+      labs(x = "Year", y = "Mean Log Wage Gain")  + scale_color_stata(name = "Type") + scale_x_discrete(limits = 1:length(levels(DiffPlotData$YearGroup)), name = "Period", labels = levels(DiffPlotData$YearGroup)) + scale_linetype_stata(name = "Sample Region") + theme_tufte() + geom_rangeframe()
 
 
 if(savePlots){

@@ -1,0 +1,41 @@
+\section{Methodology}\label{Sec:Method}
+\subsection{Approach}
+To estimate the returns to education and experience in East and West Germany as well as their changes over time the following approach will be applied:
+\begin{enumerate}
+	\item Wherever possible the variables New and Old Experience or Education are generated from the total levels of Experience and Education (see Section \ref{Sec:Data}). All observations for which this is not possible will be dropped from dataset.
+	\item The data is separated into separate sub samples according to Region (East / West) as well as survey year (periods of four years from 1991 - 2014).
+	\item The two models described below are estimated separately on each of the twelve  sub samples using pooled OLS.
+	\item Statistics of interest are calculated for each of the sub samples (see Section \ref{Sec:Results}).	
+\end{enumerate}
+
+  
+\subsection{Models}
+In step two of the approach described above the following two models are fitted to the data:
+\begin{equation}
+	\begin{split}
+	log(Wage) &= \beta_{1}TotalEdu + \beta_{2}TotalExp + \beta_{3} TotalExp^2\\
+	&+\beta_{4}Tenure + \beta_{5}YearDummie + \beta_{6}Sex
+	\end{split}
+\end{equation}
+\begin{equation} 
+	\begin{split}
+	log(Wage) &= \beta_{1a}OldEdu + \beta_{1b}NewEdu + \beta_{2a}OldExp \\
+	&+ \beta_{2b}NewExp + \beta_{3a}OldExp^2 + \beta_{3b}NewExp^2\\
+	&+\beta_{4}Tenure + \beta_{5}YearDummie + \beta_{6}Sex
+	\end{split}
+\end{equation}
+All following results regarding Total Education and Experience are therefore based on the first model whereas all results regarding New and Old Experience or Education are based on the second one.
+In the following a short definition/explanation will be given for each variable:
+
+\begin{description}
+	\item[Wage] Gross monthly wage deflated to 2010 price levels. This is the variable \textit{pglabgro} from the \textit{SoepLong pgen} dataset. 
+	\item[TotalEdu] Total years of education gained both pre and post-reunification. This is the variable \textit{pgbilzt} from the \textit{SoepLong pgen} dataset. This variable is generated based on the type of degrees the individual obtained and is set to its minimum value 7 when no degree was obtained.
+	\item[TotalExp] Total years of full time experience gained both pre- and post-reunification. This is the variable \textit{pexpft} from the \textit{SoepLong pgen} dataset.
+	\item[Old Edu] Amount of Total Education gained before reunification. For most individuals this is set to the level of Total Education they had in 1990. For some younger individuals in later samples this is generated on the assumption that they started their education at age 6 and finished it consecutively.
+	\item[Old Exp] Amount of Total Experience gained before reunification. For most individuals this is set to the level of Total Education they had in 1990. For some younger individuals in later samples this is set to zero if they have finished their education after reunification.
+	\item[YearDummie] These are actually several dummie variables for each year in one period except the first, which is the reference year.
+	\item[Tenure] Time spent with current employer (across different positions) in years. This is the variable \textit{pgerwzt} from the \textit{SoepLong pgen} dataset.
+	\item[Sex] Dummie variable indicating whether an individual is female. 
+	 
+	
+\end{description}
